@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>EShop</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html"><h1>E<i>Shop</i></h1></a>
+      <div class="navbar-links">
+        <p><a class="navbar-link" href="index.html">Home</a></p>
+        <p><a class="navbar-link" href="collection.html">Collections</a></p>
+        <p><a class="navbar-link" href="contact.html">Contact</a></p>
+      </div>
+
+      <div class="navbar-toggle">
+        <i class="fa-solid fa-bars" onclick="showNav()"></i>
+      </div>
+    </nav>
+
+    <div class="side-navbar">
+      <p style="text-align: right">
+        <i class="fa-solid fa-xmark navbar-x" onclick="closeNav()"></i>
+      </p>
+      <div class="side-navbar-links">
+        <p><a class="navbar-link" href="index.html">Home</a></p>
+        <p><a class="navbar-link" href="collection.html">Collections</a></p>
+        <p><a class="navbar-link" href="contact.html">Contact</a></p>
+      </div>
+    </div>
+
+    <!-- product -->
+
+    <div class="product-section">
+      <form class="product-search">
+        <input type="text" id="search" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+
+      <div class="products" id="products">
+         <div class="product-box">
+            <img style="height: 200px; width: 200px;" src="images/img1.jpg"/>
+            <p>Blue shirt dress</p>
+         </div>
+         
+         <div class="product-box">
+            <img style="height: 200px; width: 200px;" src="images/img2.jpg"/>
+            <p>Blue Tshirt dress</p>
+         </div>
+         
+         <div class="product-box">
+            <img style="height: 200px; width: 200px;" src="images/img3.jpg"/>
+            <p>Pink Tshirt dress</p>
+         </div>
+         
+         <div class="product-box">
+            <img style="height: 200px; width: 200px;" src="images/img4.jpg"/>
+            <p>Men Tshirt dress</p>
+         </div>
+
+         <div class="product-box">
+            <img style="height: 200px; width: 200px;" src="images/img5.jpg"/>
+            <p>Yellow female dress</p>
+         </div>
+         
+         <div class="product-box">
+            <img style="height: 200px; width: 200px;" src="images/img6.jpg"/>
+            <p>Trend female dress</p>
+         </div>
+         
+         <div class="product-box">
+            <img style="height: 200px; width: 200px;" src="images/img7.jpg"/>
+            <p>Men shirt dress</p>
+         </div>
+         
+         <div class="product-box">
+            <img style="height: 200px; width: 200px;" src="images/img8.jpg"/>
+            <p>Men black shirt dress</p>
+         </div>
+
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-box1">
+          <h2 class="heading">E<i>Shop</i></h2>
+          <p>
+            Elevate your style with us—dresses for every occasion. | Privacy
+            Policy | Terms of Service | Contact Us
+          </p>
+          <div class="footer-icon-container">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        © 2024 <b>E<i>Shop</i></b
+        >.
+      </p>
+    </div>
+
+    <script src="collection.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
