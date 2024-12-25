@@ -27,7 +27,9 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="index.html"><h1>E<i>Shop</i></h1></a>
+      <a href="index.html"
+        ><h1>E<i>Shop</i></h1></a
+      >
       <div class="navbar-links">
         <p><a class="navbar-link" href="index.html">Home</a></p>
         <p><a class="navbar-link" href="collection.html">Collections</a></p>
@@ -50,27 +52,35 @@
       </div>
     </div>
 
-    <!-- contact -->
-    <center>
-    <div class="contact">
-      <form>
-        <label>Name</label>
-        <input type="text" required/>
-        <label>Email</label>
-        <input type="email" required/>
-        <label>Message</label>
-        <textarea required></textarea>
-        <div class="btn">
-          <button type="submit">send</button>
+    <!-- shopNow -->
 
-        </div>
-      </form>
-    </div>
-  </center>
-  
-   
+    <center>
+        <h2 class="shopnow-title">Order Page</h2>
+      <div class="shopnow-container">
+        <form>
+          <div>
+            <img src="images/img8.jpg" alt="img" />
+          </div>
+          <h4>Price : <i>300$</i></h4>
+          <h6>Delivery Address</h6>
+          <input type="text" required />
+          <h6>Payment mode</h6>
+          <select required>
+            <option>UPI via</option>
+            <option>Net-Banking</option>
+            <option>Debit-card</option>
+            <option>Credit-card</option>
+            <option>Cash on delivery</option>
+          </select>
+          <div>
+              <button type="submit" onclick="placeOrder()">Place Order</button>
+          </div>
+        </form>
+      </div>
+    </center>
 
     <!-- footer -->
+
 
     <div class="footer">
       <div class="footer-container">
@@ -94,7 +104,6 @@
       </p>
     </div>
 
-    <script src="collection.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
