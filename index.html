@@ -23,11 +23,15 @@
       referrerpolicy="no-referrer"
     />
 
+
+    <link rel="icon" href="images/icon.png">
     <title>EShop</title>
   </head>
   <body>
     <nav class="navbar">
-      <a href="index.html"><h1>E<i>Shop</i></h1></a>
+    <link rel="icon" href="images/icon.png">
+      <a href="index.html"><h1><img src="images/icon.png"/>
+        E<i>Shop</i></h1></a>
       <div class="navbar-links">
         <p><a class="navbar-link" href="index.html">Home</a></p>
         <p><a class="navbar-link" href="collection.html">Collections</a></p>
@@ -199,13 +203,15 @@
     <div class="news">
         <h2>Join our News Letter</h2>
         <p>Signup for our email newsletter to get exclusive discounts and updates and more</p>
+        <form onsubmit="subscribe()">
         <div>
             <input id="phno" type="number" placeholder="Enter Phone number" class="search" required/>
         </div>
 
         <div>
-            <button onclick="subscribe()">Subscribe</button>
+            <button type="submit">Subscribe</button>
         </div>
+      </form>
     </div>
 
     <!-- footer -->

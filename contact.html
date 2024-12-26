@@ -23,11 +23,15 @@
       referrerpolicy="no-referrer"
     />
 
+
+    <link rel="icon" href="images/icon.png">
+
     <title>EShop</title>
   </head>
   <body>
     <nav class="navbar">
-      <a href="index.html"><h1>E<i>Shop</i></h1></a>
+      <a href="index.html"><h1><img src="images/icon.png" class="icon"/>
+        E<i>Shop</i></h1></a>
       <div class="navbar-links">
         <p><a class="navbar-link" href="index.html">Home</a></p>
         <p><a class="navbar-link" href="collection.html">Collections</a></p>
@@ -53,7 +57,7 @@
     <!-- contact -->
     <center>
     <div class="contact">
-      <form>
+      <form onsubmit="contact()">
         <label>Name</label>
         <input type="text" required/>
         <label>Email</label>
@@ -62,7 +66,6 @@
         <textarea required></textarea>
         <div class="btn">
           <button type="submit">send</button>
-
         </div>
       </form>
     </div>

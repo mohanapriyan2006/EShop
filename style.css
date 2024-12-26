@@ -1,460 +1,476 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    font-family: 'Poppins',sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-img{
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-
+img {
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
+/* navbar */
 
-.navbar{
-    width: 99%;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    background-color: rgb(249, 200, 135);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-}
-.navbar a{
-    text-decoration: none;
-}
-.navbar h1{
-    font-size: 25px;
-    cursor: pointer;
-    color: black;
-}
-.navbar h1:hover{
-    color: #3b3a3a;
-    
+.icon{
+  height: 25px;
+  width: 25px;
+  box-shadow: none;
+  position: relative;
+  top: 5px;
 }
 
-.navbar-links{
-    display: flex;
-    text-align: center;
-    column-gap: 20px;
-    padding-top: 5px;
-    margin-right: 10px;
+
+.navbar {
+  width: 99%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  background-color: rgb(249, 194, 120);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  padding-right: 10000px;
 }
 
-.navbar-link{
-    text-decoration: none;
-    color: black;
+.navbar a {
+  text-decoration: none;
+}
+.navbar h1 {
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+}
+.navbar h1:hover {
+  color: #3b3a3a;
 }
 
-.navbar-link:hover{
-    color: rgb(103, 98, 98);
-    text-decoration: underline;
+.navbar-links {
+  display: flex;
+  text-align: center;
+  column-gap: 20px;
+  padding-top: 5px;
+  margin-right: 10px;
 }
-.navbar-toggle{
-    padding-top: 5px;
-    display: none;
-    cursor: pointer;
+
+.navbar-link {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-link:hover {
+  color: rgb(103, 98, 98);
+  text-decoration: underline;
+}
+.navbar-toggle {
+  padding-top: 5px;
+  display: none;
+  cursor: pointer;
 }
 
 /* side navbar */
 
-.side-navbar{
-     background-color:  rgb(241, 193, 130);
-     width: 40%;
-     height: 100%;
-     position: fixed;
-     z-index: 5;
-     left: -50%;
-     transition: 1s;
-     top: 0;
-     padding: 10px;
-     border: #c6bfbf solid 1px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-
+.side-navbar {
+  background-color: rgb(249, 194, 120);
+  width: 40%;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  left: -50%;
+  transition: 1s;
+  top: 0;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.side-navbar-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100px;
-    padding: 20px;
+.side-navbar-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  padding: 20px;
 }
-.navbar-x:hover{
-    cursor: pointer;
-    color: #4f4b4b;
+.navbar-x:hover {
+  cursor: pointer;
+  color: #4f4b4b;
 }
-
 
 /* header */
 
-.header-img img{
-    height: 300px;
-    width: 300px;
-    display: block;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-
+.header-img img {
+  height: 300px;
+  width: 300px;
+  display: block;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.header{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    padding: 70px;
-    gap: 50px;
+.header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+  gap: 50px;
 }
 
-.header div button{
-    background-color:rgb(249, 186, 104);
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 20px;
-    
+.header div button {
+  background-color: rgb(249, 186, 104);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
 }
-.header div button:hover{
-    background-color:rgb(245, 177, 87);
-    position: relative;
-    right: 0.5%;
-    bottom: 0.5%;
+.header div button:hover {
+  background-color: rgb(245, 177, 87);
+  position: relative;
+  right: 0.5%;
+  bottom: 0.5%;
 }
-
 
 /* service */
 
-.service{
-    padding: 20px;
+.service {
+  padding: 20px;
 }
 
-.service-container-1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-  
-.service-container-2{
-    display: flex;
-    justify-content: space-between;   
-    text-align: center;
-    gap: 10px;
-    margin-top: 5px;
+.service-container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.service-container-2 div{
-    background-color: rgb(240, 210, 164);
-    padding: 10px;
-    border-radius: 10px;
+.service-container-2 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 10px;
+  margin-top: 5px;
 }
 
-.new-arrival{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.service-container-2 div {
+  background-color: rgb(240, 210, 164);
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.new-arrival-container{
-    position: relative;
-    flex-basis: 20%;
+.new-arrival {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.new-arrival button{
-    padding: 5%;
-    margin-left: 23%;
-    position: relative;
-    left: 0%;
-    bottom: 100%;
-    top: -25%;
-    background-color: rgb(248, 211, 155);
-    border-radius: 10px;
-    border: solid 1px rgb(179, 135, 54);
-    cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+.new-arrival-container {
+  position: relative;
+  flex-basis: 20%;
 }
 
-.new-arrival button:hover{
-    background-color: rgb(252, 193, 104);
-    top: -26%;
-
+.new-arrival button {
+  padding: 5%;
+  margin-left: 23%;
+  position: relative;
+  left: 0%;
+  bottom: 100%;
+  top: -25%;
+  background-color: rgb(248, 211, 155);
+  border-radius: 10px;
+  border: solid 1px rgb(179, 135, 54);
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
+.new-arrival button:hover {
+  background-color: rgb(252, 193, 104);
+  top: -26%;
+}
 
 /* news */
 
-.news{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
-.news p{
-    margin-left: 10px;
-    margin-bottom: 4px;
-}
-
-.news input{
-    padding: 11px;
-    width: 80vw;
-    margin-bottom: 10px;
-    border: solid rgb(146, 103, 23) 3px;
-    border-radius: 5px;
+.news p {
+  margin-left: 10px;
+  margin-bottom: 4px;
 }
 
-.news button{
-    background-color: rgb(246, 143, 25);
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: solid orange 1px;
-    font-weight: bolder;
-    margin-bottom: 7px;
-    cursor: pointer;
+.news input {
+  padding: 11px;
+  width: 80vw;
+  margin-bottom: 10px;
+  border: solid rgb(146, 103, 23) 3px;
+  border-radius: 5px;
 }
 
-.news button:hover{
-    background-color: rgb(223, 130, 22);
-    position: relative;
-    right: 0.5%;
-    bottom: 0.5%;
+.news button {
+  background-color: rgb(246, 143, 25);
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: solid orange 1px;
+  font-weight: bolder;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.news button:hover {
+  background-color: rgb(223, 130, 22);
+  position: relative;
+  right: 0.5%;
+  bottom: 0.5%;
+}
+.news form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 /* footer */
 
-.footer{
-    background-color: rgba(241, 154, 22, 0.845);
-    margin-top: 20px;
-    width: 93%;
-    padding: 19px;
-    position: absolute;
-    bottom: end;
+.footer {
+  background-color: rgba(241, 154, 22, 0.845);
+  margin-top: 20px;
+  width: 100%;
+  padding: 19px;
+  position: absolute;
+  bottom: end;
 }
 
 /* products */
 
-.product-section{
-    margin-top: 90px;
+.product-section {
+  margin-top: 90px;
 }
 
-.product-search{
-    width: 80%;
-    border: solid rgb(141, 95, 27) 2px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding: 10px;
-    margin: auto;
+.product-search {
+  width: 80%;
+  border: solid rgb(141, 95, 27) 2px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
 }
 
-.product-search input{
-    border: none;
-    background-color: transparent;
-    width: 100%;
+.product-search input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
 }
 
-.product-search input{
-    outline: none;
+.product-search input {
+  outline: none;
 }
 
-.products{
-    padding: 20px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.products {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.product-box{
-     text-align: center;
-     flex-basis: 20%;
+.product-box {
+  text-align: center;
+  flex-basis: 20%;
 }
 
-.shop-now{
-    padding: 5%;
-    position: relative;
-    left: 0%;
-    bottom: 100%;
-    top: -25%;
-    background-color: rgb(248, 211, 155);
-    border-radius: 10px;
-    border: solid 1px rgb(179, 135, 54);
-    cursor: pointer;
+.product-box p{
+  margin-top: -30px;
+  margin-bottom: 30px;
 }
-.shop-now:hover{
-    background-color: rgb(252, 193, 104);
-    top: -26%;
+
+.shop-now {
+  padding: 5%;
+  position: relative;
+  left: 0%;
+  bottom: 100%;
+  top: -25%;
+  background-color: rgb(248, 211, 155);
+  border-radius: 10px;
+  border: solid 1px rgb(179, 135, 54);
+  cursor: pointer;
+}
+.shop-now:hover {
+  background-color: rgb(252, 193, 104);
+  top: -26%;
 }
 
 /* contact */
 
-.contact{
-    background-color: rgb(228, 157, 52);
-    height: 55%;
-    width: 60%;
-    margin: 5%;
-    margin-top: 10%;
-    border-radius: 10px;
-    padding-bottom: 1%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-
+.contact {
+  background-color: rgb(228, 157, 52);
+  height: 55%;
+  width: 60%;
+  margin: 5%;
+  margin-top: 10%;
+  border-radius: 10px;
+  padding-bottom: 1%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.contact form{
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 90%;
-    margin-left: 1%;
-    margin-top: 20px;
-    padding-top: 10px;
+.contact form {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 90%;
+  margin-left: 1%;
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
-.contact input{
-    margin-bottom: 10px;
-    border: solid rgb(176, 122, 22) 1px;
-    border-radius: 5px;
-    height: 30px;
+.contact input {
+  margin-bottom: 10px;
+  border: solid rgb(176, 122, 22) 1px;
+  border-radius: 5px;
+  height: 30px;
 }
-.contact label{
-    color: black;
-    font-weight: 500;
-}
-
-.contact textarea{
-    height: 140px;
-    border: solid rgb(176, 122, 22) 1px;
-    border-radius: 5px;
+.contact label {
+  color: black;
+  font-weight: 500;
 }
 
-.btn button{
-    margin-top: 5px;
-    width: 80px;
-    padding: 2px;
-    border: solid green 1.4px;
-    background-color: rgb(98, 221, 17);
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
+.contact textarea {
+  height: 140px;
+  border: solid rgb(176, 122, 22) 1px;
+  border-radius: 5px;
+}
+
+.btn button {
+  margin-top: 5px;
+  width: 80px;
+  padding: 2px;
+  border: solid green 1.4px;
+  background-color: rgb(98, 221, 17);
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .btn {
-    text-align: center;
-    justify-self: center;
+  text-align: center;
+  justify-self: center;
 }
-.contact button:hover{
-    background-color: rgb(107, 236, 20);
+.contact button:hover {
+  background-color: rgb(107, 236, 20);
 }
 
 /* shopNowPage */
 
-.shopnow-container img{
-    height: 200px;
-    width: 200px;
-    margin-bottom: 5px;
+.shopnow-container img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 5px;
 }
 
-.shopnow-title{
-    margin-top: 8%;
+.shopnow-title {
+  margin-top: 8%;
 }
 
-.shopnow-container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(254, 215, 153);
-    width: 400px;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-
+.shopnow-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(254, 215, 153);
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.shopnow-container form{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.shopnow-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.shopnow-container form input{
-    height: 30px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+.shopnow-container form input {
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-.shopnow-container form select{
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 20px;
+.shopnow-container form select {
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 20px;
 }
 
-.shopnow-container form select option{
-    border-radius: 5px;
-    background-color: blanchedalmond;
-    cursor: pointer;
+.shopnow-container form select option {
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  cursor: pointer;
 }
 
-.shopnow-container form button{
-    width: 30%;
-    padding: 2px;
-    border-radius: 5px;
-    border: solid rgb(203, 194, 19) 1.5px;
-    background-color: rgb(243, 225, 38);
-    font-weight: 540;
-    margin-top: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    cursor: pointer;
+.shopnow-container form button {
+  width: 30%;
+  padding: 2px;
+  border-radius: 5px;
+  border: solid rgb(203, 194, 19) 1.5px;
+  background-color: rgb(243, 225, 38);
+  font-weight: 540;
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
 }
-.shopnow-container form button:hover{
-    background-color: rgb(255, 238, 56);
+.shopnow-container form button:hover {
+  background-color: rgb(255, 238, 56);
 }
-
-
-
 
 /* media query */
 
-@media screen and (max-width:600px) {
-    .navbar-toggle{
-        display: block;
-        margin-right: 3%;
-    }
-    .navbar{
-        width: 93%;
-    }
-    .navbar-links{
-        display: none;
-    }
-    .header-img img{
-        display: none;
-    }
-    .service-container-1{
-        display: none;
-    }
-    .service-container-2{
-        flex-direction: column;
-    }
-    .contact{
-        margin-top: 25%;
-    }
-    .contact button{
-        margin-left: 30%;
-    }
-    .btn{
-        padding-right: 20%;
-
-    }
-    .shopnow-container{
-        width: 60%;
-    }
-    .shopnow-title{
-        margin-top: 20%;
-    }
+@media screen and (max-width: 600px) {
+  .navbar-toggle {
+    display: block;
+    margin-right: 3%;
+  }
+  .navbar {
+    width: 93%;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .header-img img {
+    display: none;
+  }
+  .service-container-1 {
+    display: none;
+  }
+  .service-container-2 {
+    flex-direction: column;
+  }
+  .contact {
+    margin-top: 25%;
+  }
+  .contact button {
+    margin-left: 30%;
+  }
+  .btn {
+    padding-right: 20%;
+  }
+  .shopnow-container {
+    width: 60%;
+  }
+  .shopnow-title {
+    margin-top: 20%;
+  }
+  .footer {
+    width: 89%;
+  }
 }

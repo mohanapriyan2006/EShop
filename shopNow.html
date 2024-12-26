@@ -23,12 +23,15 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="icon" href="images/icon.png">
+
     <title>EShop</title>
   </head>
   <body>
     <nav class="navbar">
       <a href="index.html"
-        ><h1>E<i>Shop</i></h1></a
+        ><h1><img src="images/icon.png" class="icon"/>
+          E<i>Shop</i></h1></a
       >
       <div class="navbar-links">
         <p><a class="navbar-link" href="index.html">Home</a></p>
@@ -57,13 +60,13 @@
     <center>
         <h2 class="shopnow-title">Order Page</h2>
       <div class="shopnow-container">
-        <form>
+        <form onsubmit="placeOrder()">
           <div>
             <img src="images/img8.jpg" alt="img" />
           </div>
           <h4>Price : <i>300$</i></h4>
           <h6>Delivery Address</h6>
-          <input type="text" required />
+          <input type="text" required id="address"/>
           <h6>Payment mode</h6>
           <select required>
             <option>UPI via</option>
@@ -73,7 +76,7 @@
             <option>Cash on delivery</option>
           </select>
           <div>
-              <button type="submit" onclick="placeOrder()">Place Order</button>
+              <button type="submit">Place Order</button>
           </div>
         </form>
       </div>

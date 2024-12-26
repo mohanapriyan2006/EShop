@@ -10,6 +10,8 @@ function closeNav(){
     sidenav.style.left="-50%";
 }
 
+// subscribe
+
 var phNo = document.querySelector("#phno");
 function subscribe(){
     var phNoV = phNo.value;
@@ -25,6 +27,24 @@ function subscribe(){
 }
 
 
+
+// shopNow page
+
+
+var address = document.querySelector("#address");
 function placeOrder(){
-    alert("Successfully Place the Order (~.~) \n        Have a nice day :)")
+    var adrs = address.value;
+    if(adrs == "."){
+        alert("Please enter the address (*.*)");
+    }
+    else{
+        alert("Successfully Place the Order \n        Have a nice day :)")
+    }
+}
+
+
+// contact page
+
+function contact(){
+    alert("Your message successfully send (^_^)");
 }
