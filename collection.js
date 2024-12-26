@@ -19,7 +19,4 @@ search.addEventListener("keyup",function(event){
 
 
 
-var phNo = document.getElementById("phno");
-function subscribe(phNo){
-    alert("Subscription done by this ->"+phNo)
-}
+
