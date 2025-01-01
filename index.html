@@ -23,141 +23,157 @@
       referrerpolicy="no-referrer"
     />
 
-
-    <link rel="icon" href="images/icon.png">
-    <title>EShop</title>
+    <link rel="icon" href="images/icon.png" />
+    <title>eShop</title>
   </head>
   <body>
-    <nav class="navbar">
-    <link rel="icon" href="images/icon.png">
-      <a href="index.html"><h1><img src="images/icon.png" class="icon"/>
-        E<i>Shop</i></h1></a>
-      <div class="navbar-links">
-        <p><a class="navbar-link" href="index.html">Home</a></p>
-        <p><a class="navbar-link" href="collection.html">Collections</a></p>
-        <p><a class="navbar-link" href="contact.html">Contact</a></p>
+    <header>
+      <nav class="navbar">
+        <link rel="icon" href="images/icon.png" />
+        <a href="index.html"
+          ><h1>
+            <img src="images/icon.png" class="icon" /> e<i
+              style="font-weight: 500"
+              >shop</i
+            >
+          </h1></a
+        >
+        <div class="navbar-links">
+          <p><a class="navbar-link" href="index.html">Home</a></p>
+          <p><a class="navbar-link" href="collection.html">Collections</a></p>
+          <p><a class="navbar-link" href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-toggle">
+          <i class="fa-solid fa-bars" onclick="showNav()"></i>
+        </div>
+      </nav>
+
+      <div class="side-navbar">
+        <p style="text-align: right">
+          <i class="fa-solid fa-xmark navbar-x" onclick="closeNav()"></i>
+        </p>
+        <div class="side-navbar-links">
+          <p><a class="navbar-link" href="index.html">Home</a></p>
+          <p><a class="navbar-link" href="collection.html">Collections</a></p>
+          <p><a class="navbar-link" href="contact.html">Contact</a></p>
+        </div>
       </div>
+    </header>
 
-      <div class="navbar-toggle">
-        <i class="fa-solid fa-bars" onclick="showNav()"></i>
-      </div>
-    </nav>
+    <main>
+      <!-- header -->
 
-    <div class="side-navbar">
-      <p style="text-align: right">
-        <i class="fa-solid fa-xmark navbar-x" onclick="closeNav()"></i>
-      </p>
-      <div class="side-navbar-links">
-        <p><a class="navbar-link" href="index.html">Home</a></p>
-        <p><a class="navbar-link" href="collection.html">Collections</a></p>
-        <p><a class="navbar-link" href="contact.html">Contact</a></p>
-      </div>
-    </div>
-
-    <!-- header -->
-
-    <div class="header">
-      <div>
-        <h1>Level up your style</h1>
-        <p>with our stunning Collections</p>
-        <button onclick="location.href='collection.html'">Shop Now</button>
-      </div>
-
-      <div class="header-img">
-        <img src="images/header.jpg" alt="header imgage" />
-      </div>
-    </div>
-
-    <!-- service -->
-    <div class="service">
-      <div class="service-container-1">
+      <div class="header">
         <div>
-          <h2>We Provide Best</h2>
-          <h2>Customer Experience</h2>
+          <h1>Level up your style</h1>
+          <p>with our stunning Collections</p>
+          <button onclick="location.href='collection.html'">Shop Now</button>
         </div>
 
-        <div>
-          <p>
-            || we ensure that our customer have the best shopping experience
-          </p>
+        <div class="header-img">
+          <img src="images/header.jpg" alt="header imgage" />
+        </div>
+      </div>
+
+      <!-- service -->
+      <div class="service">
+        <div class="service-container-1">
+          <div>
+            <h2>We Provide Best</h2>
+            <h2>Customer Experience</h2>
+          </div>
+
+          <div>
+            <p>
+              || we ensure that our customer have the best shopping experience
+            </p>
+          </div>
+        </div>
+
+        <div class="service-container-2">
+          <div>
+            <i class="fa-solid fa-face-smile"></i>
+            <h4>Satification Guarantee</h4>
+            <p>
+              Where quality meets affordability, and every purchase comes with a
+              promise of satisfaction
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-plane-arrival"></i>
+            <h4>New Arrival Everyday</h4>
+            <p>
+              because you deserve something fresh and exciting every time you
+              shop!
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-truck-fast"></i>
+            <h4>Fast and Free Shipping</h4>
+            <p>
+              because getting what you love should be quick, easy, and
+              hassle-free!
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="service-container-2">
-        <div>
-          <i class="fa-solid fa-face-smile"></i>
-          <h4>Satification Guarantee</h4>
-          <p>
-            Where quality meets affordability, and every purchase comes with a
-            promise of satisfaction
-          </p>
-        </div>
+      <!-- new arrival -->
 
-        <div>
-          <i class="fa-solid fa-plane-arrival"></i>
-          <h4>New Arrival Everyday</h4>
-          <p>
-            because you deserve something fresh and exciting every time you
-            shop!
-          </p>
-        </div>
+      <div style="margin-top: 10px">
+        <h2 style="margin-left: 30px">New Arrival</h2>
+        <div class="new-arrival">
+          <div class="new-arrival-container">
+            <img
+              style="height: 200px; width: 200px"
+              src="images/img1.jpg"
+              alt="dress img"
+            />
+            <button onclick="location.href='shopNow.html'">
+              Shop Now<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
 
-        <div>
-          <i class="fa-solid fa-truck-fast"></i>
-          <h4>Fast and Free Shipping</h4>
-          <p>
-            because getting what you love should be quick, easy, and
-            hassle-free!
-          </p>
-        </div>
-      </div>
-    </div>
+          <div class="new-arrival-container">
+            <img
+              style="height: 200px; width: 200px"
+              src="images/img2.jpg"
+              alt="dress img"
+            />
+            <button onclick="location.href='shopNow.html'">
+              Shop Now<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
 
-    <!-- new arrival -->
+          <div class="new-arrival-container">
+            <img
+              style="height: 200px; width: 200px"
+              src="images/img3.jpg"
+              alt="dress img"
+            />
+            <button onclick="location.href='shopNow.html'">
+              Shop Now<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
 
-    <div style="margin-top: 10px;">
-      <h2 style="margin-left: 30px">New Arrival</h2>
-      <div class="new-arrival">
-        <div class="new-arrival-container">
-          <img
-            style="height: 200px; width: 200px"
-            src="images/img1.jpg"
-            alt="dress img"
-          />
-          <button onclick="location.href='shopNow.html'">Shop Now<i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-
-        <div class="new-arrival-container">
-          <img
-            style="height: 200px; width: 200px"
-            src="images/img2.jpg"
-            alt="dress img"
-          />
-          <button onclick="location.href='shopNow.html'">Shop Now<i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-
-        <div class="new-arrival-container">
-          <img
-            style="height: 200px; width: 200px"
-            src="images/img3.jpg"
-            alt="dress img"
-          />
-          <button onclick="location.href='shopNow.html'">Shop Now<i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-
-        <div class="new-arrival-container">
-          <img
-            style="height: 200px; width: 200px"
-            src="images/img4.jpg"
-            alt="dress img"
-          />
-          <button onclick="location.href='shopNow.html'">Shop Now<i class="fa-solid fa-arrow-right"></i></button>
+          <div class="new-arrival-container">
+            <img
+              style="height: 200px; width: 200px"
+              src="images/img4.jpg"
+              alt="dress img"
+            />
+            <button onclick="location.href='shopNow.html'">
+              Shop Now<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- most wanted -->
-    <div style="margin-top: 10px;">
+      <!-- most wanted -->
+      <div style="margin-top: 10px">
         <h2 style="margin-left: 30px">Most Wanted</h2>
         <div class="new-arrival">
           <div class="new-arrival-container">
@@ -166,72 +182,96 @@
               src="images/img5.jpg"
               alt="dress img"
             />
-            <button onclick="location.href='shopNow.html'">Shop Now<i class="fa-solid fa-arrow-right"></i></button>
+            <button onclick="location.href='shopNow.html'">
+              Shop Now<i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
-  
+
           <div class="new-arrival-container">
             <img
               style="height: 200px; width: 200px"
               src="images/img6.jpg"
               alt="dress img"
             />
-            <button onclick="location.href='shopNow.html'">Shop Now<i class="fa-solid fa-arrow-right"></i></button>
+            <button onclick="location.href='shopNow.html'">
+              Shop Now<i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
-  
+
           <div class="new-arrival-container">
             <img
               style="height: 200px; width: 200px"
               src="images/img7.jpg"
               alt="dress img"
             />
-            <button onclick="location.href='shopNow.html'">Shop Now<i class="fa-solid fa-arrow-right"></i></button>
+            <button onclick="location.href='shopNow.html'">
+              Shop Now<i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
-  
+
           <div class="new-arrival-container">
             <img
               style="height: 200px; width: 200px"
               src="images/img8.jpg"
               alt="dress img"
             />
-            <button onclick="location.href='shopNow.html'">Shop Now<i class="fa-solid fa-arrow-right"></i></button>
+            <button onclick="location.href='shopNow.html'">
+              Shop Now<i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
         </div>
       </div>
 
-    <!-- news -->
+      <!-- news -->
 
-    <div class="news">
+      <div class="news">
         <h2>Join our News Letter</h2>
-        <p>Signup for our email newsletter to get exclusive discounts and updates and more</p>
+        <p>
+          Signup for our email newsletter to get exclusive discounts and updates
+          and more
+        </p>
         <form onsubmit="subscribe()">
-        <div>
-            <input id="phno" type="number" placeholder="Enter Phone number" class="search" required/>
-        </div>
+          <div>
+            <input
+              id="phno"
+              type="number"
+              placeholder="Enter Phone number"
+              class="search"
+              required
+            />
+          </div>
 
-        <div>
+          <div>
             <button type="submit">Subscribe</button>
-        </div>
-      </form>
-    </div>
+          </div>
+        </form>
+      </div>
+    </main>
 
     <!-- footer -->
-
-    <div class="footer">
+    <footer>
+      <div class="footer">
         <div class="footer-container">
-            <div class="footer-box1">
-                <h2 class="heading">E<i>Shop</i></h2>
-                <p>Elevate your style with us—dresses for every occasion. | Privacy Policy | Terms of Service | Contact Us</p>
-                <div class="footer-icon-container">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
+          <div class="footer-box1">
+            <h2 class="heading">E<i>Shop</i></h2>
+            <p>
+              Elevate your style with us—dresses for every occasion. | Privacy
+              Policy | Terms of Service | Contact Us
+            </p>
+            <div class="footer-icon-container">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
             </div>
+          </div>
         </div>
 
-        <p>© 2024 <b>E<i>Shop</i></b>.</p>
-    </div>
-
+        <p>
+          © 2024 <b>E<i>Shop</i></b
+          > Designed by <b>Mohanapriyan.M</b>
+        </p>
+      </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

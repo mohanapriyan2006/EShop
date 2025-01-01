@@ -83,7 +83,7 @@ img {
   position: fixed;
   z-index: 5;
   left: -50%;
-  transition: 1s;
+  transition: 0.5s ease;
   top: 0;
   padding: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
@@ -311,7 +311,7 @@ img {
 /* contact */
 
 .contact {
-  background-color: rgb(228, 157, 52);
+  background-color: rgb(248, 211, 155);
   height: 55%;
   width: 60%;
   margin: 5%;
@@ -348,6 +348,7 @@ img {
   height: 140px;
   border: solid rgb(176, 122, 22) 1px;
   border-radius: 5px;
+  resize: none;
 }
 
 .btn button {

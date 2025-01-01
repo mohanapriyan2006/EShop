@@ -23,80 +23,87 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="icon" href="images/icon.png" />
 
-    <link rel="icon" href="images/icon.png">
-
-    <title>EShop</title>
+    <title>eShop</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a href="index.html"><h1><img src="images/icon.png" class="icon"/>
-        E<i>Shop</i></h1></a>
-      <div class="navbar-links">
-        <p><a class="navbar-link" href="index.html">Home</a></p>
-        <p><a class="navbar-link" href="collection.html">Collections</a></p>
-        <p><a class="navbar-link" href="contact.html">Contact</a></p>
-      </div>
-
-      <div class="navbar-toggle">
-        <i class="fa-solid fa-bars" onclick="showNav()"></i>
-      </div>
-    </nav>
-
-    <div class="side-navbar">
-      <p style="text-align: right">
-        <i class="fa-solid fa-xmark navbar-x" onclick="closeNav()"></i>
-      </p>
-      <div class="side-navbar-links">
-        <p><a class="navbar-link" href="index.html">Home</a></p>
-        <p><a class="navbar-link" href="collection.html">Collections</a></p>
-        <p><a class="navbar-link" href="contact.html">Contact</a></p>
-      </div>
-    </div>
-
-    <!-- contact -->
-    <center>
-    <div class="contact">
-      <form onsubmit="contact()">
-        <label>Name</label>
-        <input type="text" required/>
-        <label>Email</label>
-        <input type="email" required/>
-        <label>Message</label>
-        <textarea required></textarea>
-        <div class="btn">
-          <button type="submit">send</button>
+    <header>
+      <nav class="navbar">
+        <a href="index.html"
+          ><h1>
+            <img src="images/icon.png" class="icon" /> e<i
+              style="font-weight: 500"
+              >shop</i
+            >
+          </h1></a
+        >
+        <div class="navbar-links">
+          <p><a class="navbar-link" href="index.html">Home</a></p>
+          <p><a class="navbar-link" href="collection.html">Collections</a></p>
+          <p><a class="navbar-link" href="contact.html">Contact</a></p>
         </div>
-      </form>
-    </div>
-  </center>
-  
-   
+
+        <div class="navbar-toggle">
+          <i class="fa-solid fa-bars" onclick="showNav()"></i>
+        </div>
+      </nav>
+
+      <div class="side-navbar">
+        <p style="text-align: right">
+          <i class="fa-solid fa-xmark navbar-x" onclick="closeNav()"></i>
+        </p>
+        <div class="side-navbar-links">
+          <p><a class="navbar-link" href="index.html">Home</a></p>
+          <p><a class="navbar-link" href="collection.html">Collections</a></p>
+          <p><a class="navbar-link" href="contact.html">Contact</a></p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- contact -->
+      <center>
+        <div class="contact">
+          <form onsubmit="contact()">
+            <label>Name</label>
+            <input type="text" required />
+            <label>Email</label>
+            <input type="email" required />
+            <label>Message</label>
+            <textarea required></textarea>
+            <div class="btn">
+              <button type="submit">send</button>
+            </div>
+          </form>
+        </div>
+      </center>
+    </main>
 
     <!-- footer -->
-
-    <div class="footer">
-      <div class="footer-container">
-        <div class="footer-box1">
-          <h2 class="heading">E<i>Shop</i></h2>
-          <p>
-            Elevate your style with us—dresses for every occasion. | Privacy
-            Policy | Terms of Service | Contact Us
-          </p>
-          <div class="footer-icon-container">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-box1">
+            <h2 class="heading">E<i>Shop</i></h2>
+            <p>
+              Elevate your style with us—dresses for every occasion. | Privacy
+              Policy | Terms of Service | Contact Us
+            </p>
+            <div class="footer-icon-container">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
           </div>
         </div>
+
+        <p>
+          © 2024 <b>E<i>Shop</i></b
+          > Designed by <b>Mohanapriyan.M</b>
+        </p>
       </div>
-
-      <p>
-        © 2024 <b>E<i>Shop</i></b
-        >.
-      </p>
-    </div>
-
+    </footer>
     <script src="collection.js"></script>
     <script src="index.js"></script>
   </body>

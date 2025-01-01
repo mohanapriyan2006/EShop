@@ -23,89 +23,97 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="images/icon.png" />
 
-    <title>EShop</title>
+    <title>eShop</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a href="index.html"
-        ><h1><img src="images/icon.png" class="icon"/>
-          E<i>Shop</i></h1></a
-      >
-      <div class="navbar-links">
-        <p><a class="navbar-link" href="index.html">Home</a></p>
-        <p><a class="navbar-link" href="collection.html">Collections</a></p>
-        <p><a class="navbar-link" href="contact.html">Contact</a></p>
-      </div>
+    <header>
+      <nav class="navbar">
+        <a href="index.html"
+          ><h1>
+            <img src="images/icon.png" class="icon" /> e<i
+              style="font-weight: 500"
+              >shop</i
+            >
+          </h1></a
+        >
+        <div class="navbar-links">
+          <p><a class="navbar-link" href="index.html">Home</a></p>
+          <p><a class="navbar-link" href="collection.html">Collections</a></p>
+          <p><a class="navbar-link" href="contact.html">Contact</a></p>
+        </div>
 
-      <div class="navbar-toggle">
-        <i class="fa-solid fa-bars" onclick="showNav()"></i>
-      </div>
-    </nav>
+        <div class="navbar-toggle">
+          <i class="fa-solid fa-bars" onclick="showNav()"></i>
+        </div>
+      </nav>
 
-    <div class="side-navbar">
-      <p style="text-align: right">
-        <i class="fa-solid fa-xmark navbar-x" onclick="closeNav()"></i>
-      </p>
-      <div class="side-navbar-links">
-        <p><a class="navbar-link" href="index.html">Home</a></p>
-        <p><a class="navbar-link" href="collection.html">Collections</a></p>
-        <p><a class="navbar-link" href="contact.html">Contact</a></p>
-      </div>
-    </div>
-
-    <!-- shopNow -->
-
-    <center>
-        <h2 class="shopnow-title">Order Page</h2>
-      <div class="shopnow-container">
-        <form onsubmit="placeOrder()">
-          <div>
-            <img src="images/img8.jpg" alt="img" />
-          </div>
-          <h4>Price : <i>300$</i></h4>
-          <h6>Delivery Address</h6>
-          <input type="text" required id="address"/>
-          <h6>Payment mode</h6>
-          <select required>
-            <option>UPI via</option>
-            <option>Net-Banking</option>
-            <option>Debit-card</option>
-            <option>Credit-card</option>
-            <option>Cash on delivery</option>
-          </select>
-          <div>
-              <button type="submit">Place Order</button>
-          </div>
-        </form>
-      </div>
-    </center>
-
-    <!-- footer -->
-
-
-    <div class="footer">
-      <div class="footer-container">
-        <div class="footer-box1">
-          <h2 class="heading">E<i>Shop</i></h2>
-          <p>
-            Elevate your style with us—dresses for every occasion. | Privacy
-            Policy | Terms of Service | Contact Us
-          </p>
-          <div class="footer-icon-container">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-          </div>
+      <div class="side-navbar">
+        <p style="text-align: right">
+          <i class="fa-solid fa-xmark navbar-x" onclick="closeNav()"></i>
+        </p>
+        <div class="side-navbar-links">
+          <p><a class="navbar-link" href="index.html">Home</a></p>
+          <p><a class="navbar-link" href="collection.html">Collections</a></p>
+          <p><a class="navbar-link" href="contact.html">Contact</a></p>
         </div>
       </div>
+    </header>
 
-      <p>
-        © 2024 <b>E<i>Shop</i></b
-        >.
-      </p>
-    </div>
+    <main>
+      <!-- shopNow -->
+
+      <center>
+        <h2 class="shopnow-title">Order Page</h2>
+        <div class="shopnow-container">
+          <form onsubmit="placeOrder()">
+            <div>
+              <img src="images/img8.jpg" alt="img" />
+            </div>
+            <h4>Price : <i>300$</i></h4>
+            <h6>Delivery Address</h6>
+            <input type="text" required id="address" />
+            <h6>Payment mode</h6>
+            <select required>
+              <option>UPI via</option>
+              <option>Net-Banking</option>
+              <option>Debit-card</option>
+              <option>Credit-card</option>
+              <option>Cash on delivery</option>
+            </select>
+            <div>
+              <button type="submit">Place Order</button>
+            </div>
+          </form>
+        </div>
+      </center>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-box1">
+            <h2 class="heading">E<i>Shop</i></h2>
+            <p>
+              Elevate your style with us—dresses for every occasion. | Privacy
+              Policy | Terms of Service | Contact Us
+            </p>
+            <div class="footer-icon-container">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          © 2024 <b>E<i>Shop</i></b
+          > Designed by <b>Mohanapriyan.M</b>
+        </p>
+      </div>
+    </footer>
 
     <script src="index.js"></script>
   </body>
