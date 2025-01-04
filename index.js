@@ -1,11 +1,11 @@
 var sidenav = document.querySelector(".side-navbar");
 
 function showNav() {
-  sidenav.style.left = "0";
+  sidenav.style.right = "0";
 }
 
 function closeNav() {
-  sidenav.style.left = "-50%";
+  sidenav.style.right = "-50%";
 }
 
 // subscribe

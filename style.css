@@ -82,12 +82,16 @@ img {
   height: 100%;
   position: fixed;
   z-index: 5;
-  left: -50%;
+  right: -50%;
   transition: 0.5s ease;
   top: 0;
   padding: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.side-navbar p {
+  text-align: left;
 }
 
 .side-navbar-links {
