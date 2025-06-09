@@ -13,11 +13,7 @@ A sleek, responsive **e-commerce website** built with pure **HTML, CSS, and Java
 ## 🛠️ Tech Stack
 - **HTML**
 - **CSS**
-- **JavaScript (Vanilla)**
-
-## 📸 Preview
-
-![visit preview](../screenshot/eShop.png)
+- **JavaScript**
 
 
 ---
