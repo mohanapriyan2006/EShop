@@ -1,6 +1,6 @@
 # 🛍️ eShop – Responsive E-commerce Platform
 
-#### visit our site : [eShop](https://e-shop-website-project.netlify.app/)
+## 🔗 visit our site : [eShop](https://e-shop-website-project.netlify.app/)
 
 A sleek, responsive **e-commerce website** built with pure **HTML, CSS, and JavaScript**, designed to deliver a seamless shopping experience from product discovery to checkout.
 
@@ -14,6 +14,9 @@ A sleek, responsive **e-commerce website** built with pure **HTML, CSS, and Java
 - **HTML**
 - **CSS**
 - **JavaScript**
+
+## 💻 Preview
+![Preview](./screenshots/preview.png "Eshop Website")
 
 
 ---
